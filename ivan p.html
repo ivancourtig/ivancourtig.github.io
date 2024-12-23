@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IVAN COURTIG</title>
+	
+    <style>
+        body {
+            font-family: Arial, ;
+            background-color: #Comic Sans MS (cursiva);
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000000;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+            color: red;
+        }
+        .product {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            padding: 10px;
+            background-color: #000000;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .product img:hover {
+            transform: scale(1.1);
+        }
+        .product-info {
+            flex: 1;
+            padding-left: 20px;
+        }
+        .price {
+            font-size: 24px;
+            color: white;
+        }
+        .btn {
+            background-color: #FFFFFF;
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #000000;
+        }
+        /* Transición de imágenes para las galerías */
+        .image-gallery {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .image-gallery img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .image-gallery img.active {
+            opacity: 1;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>IVAN COURTIG</h1>
+    </header>
+
+    <section class="product">
+        <div class="image-gallery">
+            <img src="https://imgur.com/FdiTXXx.jpg" alt="Producto 1 - Imagen 1" class="active">
+        </div>
+        <div class="product-info">
+            <h2>PLAYERA TIPO POLO</h2>
+            <p>playera 100% algodon .</p>
+            <p class="price">$500.00</p>
+            <a href="https://wa.me/7224841544" class="btn" target="_blank">Contáctanos en WhatsApp</a>
+        </div>
+    </section>
+
+    <section class="product">
+        <div class="image-gallery">
+            <img src="https://imgur.com/omZRziG.jpg" alt="Producto 2 - Imagen 1" class="active">
+            <img src="https://imgur.com/cUnWZdx.jpg" alt="Producto 2 - Imagen 2">
+        </div>
+        <div class="product-info">
+            <h2>SUDADERA</h2>
+            <p>95% ALGODON 5% POLIESTER .</p>
+            <p class="price">800.00</p>
+            <a href="https://wa.me/7224841544" class="btn" target="_blank">Contáctanos en WhatsApp</a>
+        </div>
+    </section>
+
+    <section class="product">
+        <div class="image-gallery">
+            <img src="https://imgur.com/0NuW0s6.jpg" alt="Producto 3 - Imagen 1" class="active">
+            <img src="https://imgur.com/zUWNVL7.jpg" alt="Producto 3 - Imagen 2">
+            <img src="https://imgur.com/bKPxeDo.jpg" alt="Producto 3 - Imagen 3">
+            <img src="https://imgur.com/I44vbmI.jpg" alt="Producto 3 - Imagen 4">
+        </div>
+        <div class="product-info">
+            <h2>SUDADERA</h2>
+            <p>95% ALGODON 5% POLIESTER .</p>
+            <p class="price">$800.00</p>
+            <a href="https://wa.me/7224841544" class="btn" target="_blank">Contáctanos en WhatsApp</a>
+        </div>
+    </section>
+
+    <section class="product">
+        <div class="image-gallery">
+            <img src="https://imgur.com/dk0pVmH.jpg" alt="Producto 4 - Imagen 1" class="active">
+            <img src="https://imgur.com/VZTUtVq.jpg" alt="Producto 4 - Imagen 2">
+        </div>
+        <div class="product-info">
+            <h2>PLAYERA</h2>
+            <p>100% ALGODON.</p>
+            <p class="price">$450.00</p>
+            <a href="https://wa.me/7224841544" class="btn" target="_blank">Contáctanos en WhatsApp</a>
+        </div>
+    </section>
+
+    <section class="product">
+        <div class="image-gallery">
+            <img src="https://imgur.com/hUNWyEs.jpg" alt="Producto 5 - Imagen 1" class="active">
+            <img src="https://imgur.com/LtTDIcp.jpg" alt="Producto 5 - Imagen 2">
+        </div>
+        <div class="product-info">
+            <h2>SUDADERA</h2>
+            <p>95% ALGODON 5% POLIESTER.</p>
+            <p class="price">$800.00</p>
+            <a href="https://wa.me/7224841544" class="btn" target="_blank">Contáctanos en WhatsApp</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Métodos de pago: PayPal,pagos en oxxo, Transferencia bancaria.</p>
+		<img src="https://imgur.com/8ZpolKu.jpg" alt="oxxo" style="width:5%; border-radius:10px;">
+		 <img src="https://imgur.com/VC6DJSo.jpg" alt="oxxo" style="width:5%; border-radius:10px;">
+		 <a href="https://www.instagram.com/ivan_courtig_/profilecard/?igsh=MWJyNzR6bG9wbXZlaA==/" target="_blank" style="text-decoration: none; background-color: #E1306C; color: white; padding: 10px 20px; border-radius: 5px; font-family: Arial, sans-serif; background-position: center-left">Sígueme en Instagram</a>
+
+    </footer>
+
+    <script>
+        // Transición de imágenes para los productos con más de una imagen
+        function changeImage() {
+            const galleries = document.querySelectorAll('.image-gallery');
+            galleries.forEach(gallery => {
+                const images = gallery.querySelectorAll('img');
+                let activeIndex = Array.from(images).findIndex(image => image.classList.contains('active'));
+                images[activeIndex].classList.remove('active');
+                activeIndex = (activeIndex + 1) % images.length;
+                images[activeIndex].classList.add('active');
+            });
+        }
+
+        setInterval(changeImage, 3000); // Cambia la imagen cada 3 segundos
+    </script>
+</body>
+</html>
